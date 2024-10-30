@@ -8,4 +8,5 @@ docker run -d --name rancher \
   -p 443:443 \
   --restart=unless-stopped \
   -v ./rancher:/var/lib/rancher \
+  -v ./longhorn:/var/lib/longhorn \
   rancher/rancher:latest
