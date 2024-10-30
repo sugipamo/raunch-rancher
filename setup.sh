@@ -1,6 +1,5 @@
-mkdir -p /var/lib/longhorn
-mount --bind /var/lib/longhorn /var/lib/longhorn
-mount --make-shared /var/lib/longhorn
+mkdir longhorn
+mkdir rancher
 
 docker run -d --name rancher \
   --privileged \
